@@ -1,0 +1,124 @@
+/*
+font-family: 'DM Sans', sans-serif;
+font-family: 'Caveat', cursive;
+*/
+
+:root{
+    --texte:#000000;
+    --principale:#c59ef8;
+    --secondaire:#f89ef4;
+
+}
+*{
+    color: var(--texte);
+    margin:0;
+    box-sizing: border-box;
+    padding: 0;
+
+}
+
+body{
+    overflow-x: hidden;
+    position: absolute;
+    left: 0;
+left:0
+}
+
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/img_arriere_plan/mur_brique_fond.jpg);
+    image-rendering:pixelated;
+    background-size:cover;
+     aspect-ratio: 1604/965;
+     background-size:cover;
+     background-position:center;
+      background-repeat:no-repeat;
+      position: relative;
+      text-align: center;
+    }
+h1{
+    position: absolute;
+    width: 100vw;
+    top: 10vmin;
+    font-family: 'Caveat', cursive;
+font-size: 10vmin;
+}
+header p{
+    font-family: 'DM Sans', sans-serif;
+    position: absolute;
+    bottom: 2vmin;
+    width: 100vw;
+    font-size: 2vmin;
+    font-weight: 800;
+}
+
+.action{
+    position: absolute;
+    width: 100vw;
+    bottom: 10vmin;
+    font-family: 'Caveat', cursive;
+
+    font-size: 10vmin;
+}
+
+section{
+    height: 100vh;
+    width: 100vw;
+}
+#n1{
+    background-image: url(../img/img_arriere_plan/n1.png);
+    background-size:cover;
+    background-position:center;
+     background-repeat:no-repeat;
+     aspect-ratio: 1717/966;
+    }
+#n2{
+    background-image: url(../img/img_arriere_plan/mur_brique_fond.jpg);
+    background-size:cover;
+    background-position:center;
+     background-repeat:no-repeat;
+     aspect-ratio: 1604/965;
+}
+#n3{
+    background-image: url(../img/img_arriere_plan/n3.png);
+    background-size:cover;
+    background-position:center;
+     background-repeat:no-repeat;
+     aspect-ratio: 1717/966;
+}
+#n4{
+    background-image: url(../img/img_arriere_plan/n4.png);
+    background-size:cover;
+    background-position:center;
+     background-repeat:no-repeat;
+     aspect-ratio: 1717/966;
+}
+#n5{
+    background-image: url(../img/img_arriere_plan/n5.png);
+    background-size:cover;
+    background-position:center;
+     background-repeat:no-repeat;
+     aspect-ratio: 1717/966;
+}
+#n6{
+    background-image: url(../img/img_arriere_plan/n6.png);
+    background-size:cover;
+    background-position:center;
+     background-repeat:no-repeat;
+     aspect-ratio: 16/9;
+}
+#n7{
+    background-image: url(../img/img_arriere_plan/n7.jpg);
+    background-size:cover;
+    background-position:center;
+     background-repeat:no-repeat;
+     aspect-ratio: 16/9;
+}
+#n8{
+    background-image: url(../img/img_arriere_plan/n8.jpg);
+    background-size:cover;
+    background-position:center;
+     background-repeat:no-repeat;
+     aspect-ratio: 16/9;
+}
