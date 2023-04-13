@@ -14,17 +14,29 @@ font-family: 'Caveat', cursive;
     margin:0;
     box-sizing: border-box;
     padding: 0;
+}
+main{
+    max-width: 1580px;
+    margin: 0 auto;
+    box-shadow:0px 0px 50px black;
 
 }
-
 body{
+
+    background: rgb(254,236,255);
+    background: linear-gradient(0deg, rgba(53,9,121,1) 0%, rgba(235,202,255,1) 100%);
+    width: 100vw;
     overflow-x: hidden;
-    position: absolute;
-    left: 0;
-left:0
+    position: relative;
+
+
 }
 
 header{
+    max-width: 1580px;
+    margin: 0 auto;
+    box-shadow:0px 0px 50px black;
+
     width: 100vw;
     height: 100vh;
     background-image: url(../img/img_arriere_plan/mur_brique_fond.jpg);
@@ -39,7 +51,7 @@ header{
     }
 h1{
     position: absolute;
-    width: 100vw;
+    width: 100%;
     top: 10vmin;
     font-family: 'Caveat', cursive;
 font-size: 10vmin;
@@ -48,23 +60,25 @@ header p{
     font-family: 'DM Sans', sans-serif;
     position: absolute;
     bottom: 2vmin;
-    width: 100vw;
+    width: 100%;
     font-size: 2vmin;
     font-weight: 800;
 }
 
 .action{
     position: absolute;
-    width: 100vw;
-    bottom: 10vmin;
+    width: 100%;
+    bottom: 20vmin;
     font-family: 'Caveat', cursive;
-
     font-size: 10vmin;
 }
 
 section{
+    position: relative;
     height: 100vh;
     width: 100vw;
+    max-width: 1580px;
+
 }
 #n1{
     background-image: url(../img/img_arriere_plan/n1.png);
