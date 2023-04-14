@@ -16,7 +16,7 @@ font-family: 'Caveat', cursive;
     padding: 0;
 }
 main{
-    max-width: 1580px;
+    max-width: 1920px;
     margin: 0 auto;
     box-shadow:0px 0px 50px black;
 
@@ -33,7 +33,7 @@ body{
 }
 
 header{
-    max-width: 1580px;
+    max-width: 1920px;
     margin: 0 auto;
     box-shadow:0px 0px 50px black;
 
@@ -76,8 +76,8 @@ header p{
 section{
     position: relative;
     height: 100vh;
-    width: 100vw;
-    max-width: 1580px;
+    width: 100%;
+    max-width: 1920px;
 
 }
 #n1{
@@ -86,6 +86,7 @@ section{
     background-position:center;
      background-repeat:no-repeat;
      aspect-ratio: 1717/966;
+
     }
 #n2{
     background-image: url(../img/img_arriere_plan/mur_brique_fond.jpg);
@@ -93,6 +94,8 @@ section{
     background-position:center;
      background-repeat:no-repeat;
      aspect-ratio: 1604/965;
+
+
 }
 #n3{
     background-image: url(../img/img_arriere_plan/n3.png);
@@ -116,7 +119,7 @@ section{
      aspect-ratio: 1717/966;
 }
 #n6{
-    background-image: url(../img/img_arriere_plan/n6.png);
+    background-color:#0aaddf;
     background-size:cover;
     background-position:center;
      background-repeat:no-repeat;
@@ -136,3 +139,33 @@ section{
      background-repeat:no-repeat;
      aspect-ratio: 16/9;
 }
+
+
+.spritesheetbody{
+    height: 600vh;
+    width: 100vw;
+}
+.spritesheet{
+    position: absolute;
+    width: 300px;
+    bottom:300px;
+    left: 0;
+    aspect-ratio: 1/1;
+    background-size: 2400% 100%;
+    background-position: 2400% 0;
+    background-image: url(../img/img_elements_visuels/spritesheet_chat_marche.png);
+    animation-name: marche;
+    animation-duration: 0.6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(24);
+    animation-play-state: paused;
+}
+@keyframes marche {
+    from { background-position: 0 0; }
+    to { background-position: -2400% 0; } 
+  }
+  
+  .is-scrolling .spritesheet{
+    animation-play-state:running
+
+  }
