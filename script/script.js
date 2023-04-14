@@ -7,13 +7,15 @@ let anim= gsap.to(".action", {
 anim.play()
 
 let spritesheet = document.querySelector(".spritesheetbody")
-
-function minuteur(){
-document.querySelector("body").classList.remove('is-scrolling')
+let body = document.querySelector("body")
+let timer
+function removeClass(){
+    body.classList.remove('is-scrolling')
 }
-
 window.addEventListener("scroll", ()=>{
-document.querySelector("body").classList.add('is-scrolling');
-setTimeout(minuteur,100);
+    clearTimeout(timer)
+    body.classList.add('is-scrolling');
+    timer = setTimeout(removeClass,100);
+
 });
 
