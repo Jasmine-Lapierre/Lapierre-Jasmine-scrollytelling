@@ -36,11 +36,10 @@ header{
     max-width: 1920px;
     margin: 0 auto;
     box-shadow:0px 0px 50px black;
-
+aspect-ratio: 16/9;
     width: 100vw;
     height: 100vh;
-    background-image: url(../img/img_arriere_plan/mur_brique_fond.jpg);
-    image-rendering:pixelated;
+    background-image: url(../img/img_arriere_plan/n8.jpg);
     background-size:cover;
      aspect-ratio: 1604/965;
      background-size:cover;
@@ -145,10 +144,10 @@ section{
     height: 600vh;
     width: 100vw;
 }
-.spritesheet{
+.spritesheetmarche{
     position: absolute;
     width: 300px;
-    bottom:300px;
+    bottom:225px;
     left: 0;
     aspect-ratio: 1/1;
     background-size: 2400% 100%;
@@ -165,7 +164,7 @@ section{
     to { background-position: -2400% 0; } 
   }
   
-  .is-scrolling .spritesheet{
+  .is-scrolling .spritesheetmarche{
     animation-play-state:running
 
   }
