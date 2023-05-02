@@ -29,6 +29,7 @@ body{
     overflow-x: hidden;
     position: relative;
 
+    margin: 0 auto;
 
 }
 
@@ -58,10 +59,14 @@ font-size: 10vmin;
 header p{
     font-family: 'DM Sans', sans-serif;
     position: absolute;
+    left: 0;
+    right: 0;
     bottom: 2vmin;
-    width: 100%;
+    width: 80%;
     font-size: 2vmin;
-    font-weight: 800;
+    font-weight: 600;
+    left: 50%;
+    transform: translateX(-50%)
 }
 
 .action{
@@ -111,6 +116,7 @@ section{
      aspect-ratio: 1717/966;
 }
 #n5{
+    overflow: hidden;
     background-image: url(../img/img_arriere_plan/n5.png);
     background-size:cover;
     background-position:left;
@@ -125,7 +131,7 @@ section{
      aspect-ratio: 16/9;
 }
 #n7{
-    background-image: url(../img/img_arriere_plan/n7.jpg);
+    background-image: url(../img/img_arriere_plan/n7.png);
     background-size:cover;
     background-position:center;
      background-repeat:no-repeat;
@@ -214,6 +220,12 @@ section{
     bottom: -200px;
     right: -100%;
 }
+.arbre2{
+    position: absolute;
+    height: 1000px;
+    bottom: -200px;
+    right: -100%;
+}
 
 .derriere{
 top: -100px;
@@ -234,4 +246,64 @@ top: -100px;
 }
 .seul{
     position: absolute
+}
+
+section{
+    overflow: hidden;
+}
+
+.etoile1{
+    position: absolute;
+    top: 10vmin;
+    left: 10vmin;
+}
+.etoile2{
+    position: absolute;
+    bottom: 60vmin;
+    right: 10vmin;
+}
+
+.nuage{
+    position: absolute;
+    top: 0;
+}
+.vague{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.bateau{
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%,-50%);
+}
+
+.gauche{
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    width: 40vw;
+}
+.droite{
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    width: 40vw;
+
+}
+.chatnonlineaire{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.chatetoilecoeur{
+    width: 30vmin;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
 }
