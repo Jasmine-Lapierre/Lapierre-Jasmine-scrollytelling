@@ -307,3 +307,61 @@ section{
     transform: translateX(-50%);
     position: absolute;
 }
+
+p{
+    height: fit-content;
+
+    font-size: 3vmin;
+    font-weight: 600;
+    font-family: 'DM Sans', sans-serif;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.p1{
+    position: relative;
+}
+.p2{
+    position: relative;
+
+}
+.n1{
+    left: 80%;
+    background-color: rgb(245, 157, 85);
+}
+.n2{
+
+    top: 86%;
+    background-color: rgb(245, 157, 85);
+}
+.n3{
+    top: 80%;
+}
+.n4{
+    position: absolute;
+    height: fit-content;
+    top: 90%;
+    background-color: rgb(82, 206, 103);
+}
+.n5{
+    position: absolute;
+    left: 50%;
+    top: 5vh;
+    transform: translate(-50%);
+
+
+}
+.n7{
+    top: 90%;
+}
+.n8{
+    top: 55%;
+}
+
+.credits{
+    top: 90%;
+    background: rgb(191, 169, 252);
+}
