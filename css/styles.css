@@ -284,13 +284,13 @@ section{
     left: 0;
     bottom: 0;
     position: absolute;
-    width: 40vw;
+    width: 30vw;
 }
 .droite{
     right: 0;
     bottom: 0;
     position: absolute;
-    width: 40vw;
+    width: 30vw;
 
 }
 .chatnonlineaire{
