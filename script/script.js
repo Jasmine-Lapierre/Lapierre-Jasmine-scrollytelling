@@ -1,14 +1,28 @@
+gsap.registerPlugin(ScrollTrigger);
+let sections = document.querySelectorAll("section");
+let sectionsArray = Array.from(sections);
+
 let anim= gsap.to(".action", {
     opacity:0,
     y:"3vh",
     duration:1.5,
-    repeat:-1
+    repeat:-1,
+    scrollTrigger: {
+      trigger: '.n1',
+      markers: "true",
+      start:"80% bottom"
+    }
 })
 let animAmpoule= gsap.to(".ampoule", {
   scale:2,
   duration:1,
   repeat:-1,
-  yoyo:true
+  yoyo:true,
+    scrollTrigger: {
+      trigger: '.n4',
+      markers: "true",
+      start:"80% bottom"
+    }
 })
 let animNonLineaire= gsap.to(".chatnonlineaire", {
   x:"-10vh",
@@ -18,7 +32,12 @@ let animNonLineaire= gsap.to(".chatnonlineaire", {
   duration:5,
   repeat:-1,
   yoyo:true,
-  ease:"elastic.inOut"
+  ease:"elastic.inOut",
+  scrollTrigger: {
+    trigger: '.n3',
+    markers: "true",
+    start:"80% bottom"
+  }
 })
 let animPetitesEtoiles= gsap.to(".etoile", {
   rotation:360,
@@ -26,7 +45,12 @@ let animPetitesEtoiles= gsap.to(".etoile", {
   duration:3,
   repeat:-1,
   yoyo:true,
-  opacity:0.5
+  opacity:0.5,
+  scrollTrigger: {
+    trigger: '.n8',
+    markers: "true",
+    start:"80% bottom"
+  }
 })
 let animNuage= gsap.to(".nuage", {
   duration:2,
@@ -35,14 +59,24 @@ let animNuage= gsap.to(".nuage", {
 
   repeat:-1,
   yoyo:true,
-  ease:"back.inOut"
+  ease:"back.inOut",
+  scrollTrigger: {
+    trigger: '.n7',
+    markers: "true",
+    start:"80% bottom"
+  }
 })
 let animBateau= gsap.to(".bateau", {
   rotation:25,
   duration:2,
   repeat:-1,
   yoyo:true,
-  ease:"back.inOut"
+  ease:"back.inOut",
+  scrollTrigger: {
+    trigger: '.n7',
+    markers: "true",
+    start:"80% bottom"
+  }
 })
 
 let animVague1= gsap.to(".vaguederriere", {
@@ -50,7 +84,12 @@ let animVague1= gsap.to(".vaguederriere", {
   duration:2,
   repeat:-1,
   yoyo:true,
-  ease:"power2.inOut"
+  ease:"power2.inOut",
+  scrollTrigger: {
+    trigger: '.n7',
+    markers: "true",
+    start:"80% bottom"
+  }
 
 })
 let animVague2= gsap.to(".vaguedevant", {
@@ -59,11 +98,21 @@ let animVague2= gsap.to(".vaguedevant", {
   repeat:-1,
   yoyo:true,
   y:-10,
-  ease:"power2.inOut"
+  ease:"power2.inOut",
+  scrollTrigger: {
+    trigger: '.n7',
+    markers: "true",
+    start:"80% bottom"
+  }
 
 })
 let animarbreDeux = gsap
-  .timeline({})
+  .timeline({
+    scrollTrigger: {
+      trigger: '.n5',
+      markers: "true",
+      start:"80% bottom"
+    }})
   .to(
     document.querySelector('.arbre'),
     {
@@ -89,7 +138,12 @@ let animarbreDeux = gsap
 let animarbreseul = gsap
   .timeline(
     { 
-
+      
+      scrollTrigger: {
+        trigger: '.n5',
+        markers: "true",
+        start:"80% bottom"
+      }
    })
   .to(
     document.querySelector('.arbrechat'),
@@ -126,6 +180,11 @@ window.addEventListener("scroll", ()=>{
 let animAffaireQuiTombentjsp = gsap
   .timeline(
     { 
+      scrollTrigger: {
+        trigger: '.n2',
+        markers: "true",
+        start:"80% bottom"
+      }
 
    })
   .to(
